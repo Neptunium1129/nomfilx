@@ -4,9 +4,10 @@ REACT, ES6 MOVIE APP
 
 ##SCREENS
 
-- [ ] HOME
-- [ ] TV Shows
-- [ ] Search
+- [x] HOME
+- [x] TV Shows
+- [x] Search
+- [x] Poster
 - [ ] Detail
 
 ##API Verbs
