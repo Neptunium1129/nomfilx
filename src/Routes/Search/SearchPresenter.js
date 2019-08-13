@@ -5,6 +5,7 @@ import Section from "../../Components/Section";
 import Loader from '../../Components/Loader';
 import Message from '../../Components/Message';
 import Poster from '../../Components/Poster';
+import Helmet from "react-helmet";
 
 const Container = styled.div`
   padding: 20px;
@@ -26,6 +27,9 @@ const SearchPresenter = ({
   movieResults, tvResults , searchTerm, updateTerm , error, loading, handleSubmit
  }) => (
     <Container>
+    <Helmet>
+      <title>Search | NomFilx</title>
+    </Helmet>
         <Form onSubmit={handleSubmit}>
             <Input placeholder="검색어를 입력하세요!" value={searchTerm} onChange={updateTerm}></Input>
         </Form>

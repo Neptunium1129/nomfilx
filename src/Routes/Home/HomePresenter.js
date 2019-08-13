@@ -4,6 +4,8 @@ import styled from "styled-components";
 import Section from "Components/Section";
 import Message from '../../Components/Message';
 import Poster from '../../Components/Poster';
+import Helmet from "react-helmet";
+import Loader from '../../Components/Loader';
 
 const Container = styled.div`
     padding : 20px;
@@ -11,8 +13,13 @@ const Container = styled.div`
 
 
 const HomePresenrter = ({ nowPlaying, upcoming, popular, error, loading  }) => 
-loading ? null : (
+<>
+<Helmet>
+    <title>Movies | NomFilx</title>
+</Helmet>
+{loading ? <Loader /> : (
     <Container>
+
         {upcoming && upcoming.length > 0 && 
         (<Section title="upcoming Movies">
             {upcoming.map(movie => (
@@ -65,8 +72,11 @@ loading ? null : (
         </Section>
         )}
         {error && <Message text={error} color="#c0392b" />}
-    </Container>
-);
+</Container>
+)}
+</>
+
+
 
 HomePresenrter.protoTypes = {
     nowPlaying : PropTypes.array,

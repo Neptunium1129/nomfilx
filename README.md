@@ -8,7 +8,7 @@ REACT, ES6 MOVIE APP
 - [x] TV Shows
 - [x] Search
 - [x] Poster
-- [ ] Detail
+- [x] Detail
 
 ##API Verbs
 
@@ -21,6 +21,13 @@ REACT, ES6 MOVIE APP
 - [x] MOVIE Detail  
 - [x] search Movie
 - [x] search TV
+
+##CODE Challenges
+
+- [ ] IMDB LINK
+- [ ] 제작사 이미지, 유튜브 비디오
+- [ ] 콜렉션 링크 (영화 시리즈)
+- [ ] 시즌 (TV시리즈)
 
 ##PATTERN
 
